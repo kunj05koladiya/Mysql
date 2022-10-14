@@ -18,4 +18,24 @@
 -- select * from salesman_master;
 -- select salesman_name from salesman_master where sal_amt =3000;
 -- update salesman_master set city='pune';
-drop table salesman_master;
+-- drop table salesman_master;
+
+-- create table salesman_master(
+--     salesman_no varchar(50),
+--     salesman_name varchar(50),
+--     adress varchar(50),
+--     city varchar(50),
+--     pincode numeric(38),
+--     state varchar(50),
+--     sal_amt numeric(38) not null,
+--     tgttoget numeric(38) not null,
+--     ytdsale numeric(38) not null,
+--     remark varchar(50),
+--     constraint pk1_salesman_master primary key(salesman_no)
+-- );
+-- alter table salesman_master add column adress2 varchar(30) after adress;
+-- insert into salesman_master values('S00001','kiran','A/14 worli','B/12,bandra','bombay',400002,'Mah',3000,100,50,'good');
+-- insert into salesman_master values('S00002','manish','65-nariman','102-juhu','bombay',400001,'Mah',3000,200,100,'good');
+-- insert into salesman_master values('S00003','ravi','P-7 bandra','A-19,adajan','bombay',400032,'Mah',3000,200,100,'good');
+-- insert into salesman_master values('S00004','aashish','A/5 juhu','W-10,goregau','bombay',400044,'Mah',3500,200,150,'good');
+
