@@ -47,6 +47,8 @@ insert into product_master values('P07885','CD drive',2.50,'piece',10,3,5250,510
 insert into product_master values('P07965','540 HDD',4,'piece',10,3,8400,8000);
 insert into product_master values('P07975','1.44 drive',5,'piece',10,3,1050,1000);
 insert into product_master values('P08865','1.22 drive',5,'piece',2,3,1050,1000);
+insert into product_master values('P0345','mouse',5,'piece',4,3,105,1000);
+
 
 
 
