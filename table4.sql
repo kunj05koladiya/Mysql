@@ -1,4 +1,3 @@
-                    --PRIMARY KEY
 -- create table myBag(
 --     color varchar(30),
 --     compartment int,
