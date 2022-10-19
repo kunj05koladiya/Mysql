@@ -40,6 +40,5 @@
 -- insert into myBag values("red",7,"35L");
 -- insert into myBag values("blue",7,"35L");
 -- insert into myBag values("green",7,"35L");
+-- select * from myBag;
 
-
-select * from myBag;
