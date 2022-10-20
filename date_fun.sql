@@ -82,3 +82,6 @@
 -- select maketime(12,29,29);
 -- select maketime(12,29,209);
 
+-- select date_format("2022-10-20","M e Y");
+
+select date_format(from_days(datediff(now(),"2005-08-03")),"%y %M %d") as age;
