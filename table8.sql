@@ -1,0 +1,19 @@
+-- create table Products(
+--     Code int,
+--     Name varchar(30),
+--     Price real,
+--     Manufacturer int,
+--     constraint pk_Products primary key(Code),
+--     constraint fk_Products foreign key(Manufacturer) references Manufactures(code)
+-- );
+
+-- insert into Products values(1,'Hard drive',240,5);
+-- insert into Products values(2,'Memory',120,6);
+-- insert into Products values(3,'ZIP drive', 150,4);
+-- insert into Products values(4,'Floppy disk',5,6);
+-- insert into Products values(5,'Monitor',240,1);
+-- insert into Products values(6,'DVD drive',180,2);
+-- insert into Products values(7,'CD drive', 90,2);
+-- insert into Products values(8,'Printer', 270,3);
+-- insert into Products values(9,'Toner cartridge',66,3);
+-- insert into Products values(10,'DVD burner',180,2);

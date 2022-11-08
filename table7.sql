@@ -1,0 +1,11 @@
+-- create table Manufactures(
+--     code int,
+--     Name varchar(30),
+--     constraint pk_Manufactures primary key(code)
+-- );
+-- insert into Manufactures values(1,'Sony');
+-- insert into Manufactures values(2,'crt-Lab');
+-- insert into Manufactures values(3,'Packard');
+-- insert into Manufactures values(4,'Iomega');
+-- insert into Manufactures values(5,'Fujitsu');
+-- insert into Manufactures values(6,'Winchester');
