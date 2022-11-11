@@ -25,6 +25,7 @@
 
 -- update Products set Price=(price*0.10) where Price>=120;
 
+-- --------------------------------------------------------------------------------------------------------------------
 -- Select Products.Code,Products.Name,Products.Price,Products.Manufacturer,Manufactures.code,Manufactures.Name
 -- from Products
 -- inner join Manufactures
@@ -59,7 +60,61 @@
 -- left join Manufactures
 -- on Products.Code=Manufactures.code;
 
-Select *
-from Products
-right join Manufactures
-on Products.Code=Manufactures.code;
+-- Select *
+-- from Products
+-- right join Manufactures
+-- on Products.Code=Manufactures.code;
+
+-- --------------------------
+
+-- Select *
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code;
+
+-- ----------------------------
+-- use skilldemo2
+-- select a.Code,a.Name,a.Price,a.Manufacturer
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code;
+
+-- select a.Name,a.Price,a.Manufacturer
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code;
+
+-- select avg(a.Price),b.code
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code
+-- group by b.code;
+
+-- select avg(a.Price),b.code,b.Name
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code
+-- group by b.Name;
+
+-- select avg(a.Price),a.Name
+-- from Products a,manufactures b
+-- where a.Manufacturer=b.code
+-- group by a.Price
+-- having a.Price>=15;
+
+-- 15
+-- select a.Name,a.Price
+-- from Products a
+-- order by Price asc limit 1;
+
+-- select a.Name,a.Price
+-- from Products a
+-- where Price=(select min(Price) from Products);
+
+--16
+-- select a.Name,a.Price,a.Manufacturer
+-- from Products a
+-- order by Price desc limit 1;
+
+-- select a.Name,a.Price,a.Manufacturer
+-- from Products a
+-- where Price=(select max(Price) from Products);
+
+
+
+
