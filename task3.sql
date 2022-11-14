@@ -62,11 +62,71 @@
 -- group by p.product_no
 -- having p.description="mouse";
 
+-- e
+-- select c.Name,p.description
+-- from client_master c,product_master p,sales_order s,sales_order_details sd
+-- where c.Clientno=s.Client_no
+-- and p.product_no=sd.Productno
+-- and s.Order_no=sd.Orderno
+-- and sd.Qtyordered<5 and p.description='mouse'
 
 -- f
-select c.Clientno,c.Name,p.product_no,p.description,s.Order_no,s.Orderdate,s.Delydate
-from client_master c,product_master p,sales_order s,sales_order_details sd
-where c.Clientno=s.Client_no
-and p.product_no=sd.Productno
-and s.Order_no=sd.Orderno
-and c.Name in("Ivan","basu");
+-- select c.Clientno,c.Name,p.product_no,p.description,s.Order_no,s.Orderdate,s.Delydate
+-- from client_master c,product_master p,sales_order s,sales_order_details sd
+-- where c.Clientno=s.Client_no
+-- and p.product_no=sd.Productno
+-- and s.Order_no=sd.Orderno
+-- and c.Name in("Ivan","basu");
+
+-- g
+-- select c.Clientno,c.Name,p.product_no,s.Order_no,p.description,sd.Qtyordered,s.Orderdate,s.Delydate
+-- from client_master c,product_master p,sales_order s,sales_order_details sd
+-- where c.Clientno=s.Client_no
+-- and p.product_no=sd.Productno
+-- and s.Order_no=sd.Orderno
+-- and c.Clientno in("C00001","C00002");
+
+
+
+-- Sub Queries
+-- a
+-- select product_no,description 
+-- from product_master
+
+-- where product_no
+-- not in(select Productno from sales_order_details);
+
+-- b
+-- select Name,Adress,city,pincode 
+-- from client_master
+
+-- where Clientno
+-- in (select Client_no from sales_order
+-- where Order_no="O19001");
+
+
+-- c
+-- select Clientno,Name,Adress,city,pincode 
+-- from client_master
+
+-- where Clientno
+-- in(select Client_no from sales_order
+-- where Orderdate<"2004-05-02");
+
+
+-- d
+-- select c.Clientno,c.Name,s.Order_no,p.product_no
+-- from client_master c,sales_order s,product_master p,sales_order_details sd
+-- where c.Clientno=s.Client_no
+-- and p.product_no=sd.Productno
+-- and s.Order_no=sd.Orderno
+-- and description='mouse';
+
+
+-- e
+-- select c.Clientno,c.Name,s.Order_no,p.product_no,p.sell_price
+-- from client_master c,sales_order s,product_master p,sales_order_details sd
+-- where c.Clientno=s.Client_no
+-- and p.product_no=sd.Productno
+-- and s.Order_no=sd.Orderno
+-- and sell_price>=10000;
